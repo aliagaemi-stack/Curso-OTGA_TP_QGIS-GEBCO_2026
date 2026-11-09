@@ -1,0 +1,16 @@
+# Copias de seguridad de QGIS
+*.qgz~
+*.qgs~
+
+# Archivos temporales de GeoPackage / SQLite
+*.gpkg-wal
+*.gpkg-shm
+*.gpkg-journal
+
+# Archivos temporales de Windows
+Thumbs.db
+desktop.ini
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
