@@ -3,9 +3,8 @@
 **Autor:** Emilio Aliaga  
 **Fecha de elaboración:** noviembre de 2026  
 **Software:** QGIS 3.44.6
-**Documentación:** transcripción y complemento de `Práctica QGIS(2).docx`, contrastados con los archivos del proyecto QGIS entregado.
 
-> **Consideraciones:** El trabajo presenta la interpretación geomorfológica de un sector del margen continental patagónico, dentro de un recorte regional GEBCO 2026 más amplio. **Los porcentajes de procedencia batimétrica (TID) y mapas derivados se calcularon para el recorte completo**, mientras que el mapeo geomorfológico se concentró en el sector 44°–47° S. Se documentan ambas extensiones para evitar confundir sus superficies.
+**Consideraciones:** El trabajo presenta la interpretación geomorfológica de un sector del margen continental patagónico, dentro de un recorte regional GEBCO 2026 más amplio. **Los porcentajes de procedencia batimétrica (TID) y mapas derivados se calcularon para el recorte completo**, mientras que el mapeo geomorfológico se concentró en el sector 44°–47° S.
 
 ## 1. Fuentes de datos
 
@@ -134,7 +133,6 @@ Las morfologías se transcriben de la leyenda del mapa final, provienen del camp
 
 ### 7.2.1. Criterios por unidad registrados en el GeoPackage
 
-**Complemento para el README:** en la tabla siguiente se documentan literalmente los atributos de la capa `unidades_geomorfologicas` (14 entidades). Se agrupan las seis geometrías de cañones con iguales atributos; se señalan explícitamente los textos incompletos y los campos nulos, sin inventar contenidos.
 
 | Unidad (`unidad`) | Criterio registrado (`criterio`) | Confianza registrada (`confianza`) |
 | --- | --- | --- |
@@ -179,7 +177,7 @@ Contraste del mapa geomorfológico con el TID
 | Media | Límite reconocible, pero con transición gradual, procedencia mixta de fuentes o predominio parcial de datos indirectos. |
 | Baja | Límite poco definido, interpretado principalmente sobre datos gravimétricos con resolución insuficiente |
 
-## 9. Contraste bibliográfico y limitaciones (apartado 11.4)
+## 9. Contraste con bibliografía y limitaciones (apartado 11.4)
 
 Se contrastaron las unidades geomorfológicas mapeadas con la grilla TID con el propósito de evaluar la procedencia de los datos batimétricos involucrados en cada sector. Se prestó especial atención a los sectores respaldados por mediciones directas contra aquellos basados en información interpolada mediante gravimetría.
 
@@ -189,9 +187,7 @@ Como referencia bibliográfica se utilizó el mapa morfosedimentario del margen 
 
 Finalmente la incorporación de batimetría de mayor resolución permitiría mejorar especialmente la delimitación de cañones submarinos, escarpas y reconocer geoformas de menor escala como remoción en masa, megaóndulas sobre depósitos contorníticos, etc.
 
-## 10. Estructura del repositorio y reproducción
-
-**Complemento para el README (estructura comprobada en el archivo de proyecto):**
+## 10. Estructura del repositorio
 
 ```text
 proyecto_QGIS/
@@ -215,7 +211,7 @@ proyecto_QGIS/
 │   ├── isobatas_200m.gpkg
 │   └── isobatas_500m.gpkg
 └── salidas/
-    ├── Mapa práctica QGIS.png
+    ├── Mapa_practica_QGIS.png
     ├── P1.png
     ├── P2.png
     └── P3.png
@@ -223,18 +219,12 @@ proyecto_QGIS/
 
 ### Salidas - gráficos
 
-![Mapa geomorfológico final del margen continental patagónico](salidas/Mapa%20pr%C3%A1ctica%20QGIS.png)
+![Mapa geomorfológico final del margen continental patagónico](salidas/Mapa_practica_QGIS.png)
 
-**Mapa final:** [PNG de la composición de impresión](salidas/Mapa%20pr%C3%A1ctica%20QGIS.png). Se verificó un tamaño de **4133 × 2480 píxeles**, con metadatos próximos a **300 ppp**.
 
 | Perfil P1 | Perfil P2 | Perfil P3 |
 | --- | --- | --- |
 | ![Perfil batimétrico P1](salidas/P1.png) | ![Perfil batimétrico P2](salidas/P2.png) | ![Perfil batimétrico P3](salidas/P3.png) |
-
-### Recomendaciones para publicación
-
-No cambiar las rutas ni los nombres de archivo sin actualizar los vínculos del proyecto. En caso de excluir un raster pesado del repositorio, indicar con claridad qué archivo falta, el enlace de descarga y cómo reconstruirlo. El raster de pendientes supera **25 MiB**, límite habitual de carga individual mediante el navegador web de GitHub; puede subirse mediante Git (respetando los límites de GitHub), utilizar compresión GeoTIFF sin pérdida o documentar su regeneración. No se ha publicado todavía el repositorio desde este README.
-
 
 ## 11. Referencias
 
